@@ -1,0 +1,7 @@
+C:\Users\Keyonca\source\repos\Lab2_1\bin\Debug\Lab2_1.exe.config
+C:\Users\Keyonca\source\repos\Lab2_1\bin\Debug\Lab2_1.exe
+C:\Users\Keyonca\source\repos\Lab2_1\bin\Debug\Lab2_1.pdb
+C:\Users\Keyonca\source\repos\Lab2_1\obj\Debug\Lab2_1.csproj.AssemblyReference.cache
+C:\Users\Keyonca\source\repos\Lab2_1\obj\Debug\Lab2_1.csproj.CoreCompileInputs.cache
+C:\Users\Keyonca\source\repos\Lab2_1\obj\Debug\Lab2_1.exe
+C:\Users\Keyonca\source\repos\Lab2_1\obj\Debug\Lab2_1.pdb
