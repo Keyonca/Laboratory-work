@@ -1,0 +1,6 @@
+This is a line without digits.
+Another line with no digits.
+Hello world
+Привет, как дела?
+Сегодня пятница
+Просто текст без чисел

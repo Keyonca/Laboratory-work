@@ -1,0 +1,123 @@
+<?xml version="1.0"?>
+<ArrayOfToy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Toy>
+    <Name>Плюшевый мишка</Name>
+    <Price>300</Price>
+    <AgeFrom>3</AgeFrom>
+    <AgeTo>6</AgeTo>
+  </Toy>
+  <Toy>
+    <Name>Машинка</Name>
+    <Price>100</Price>
+    <AgeFrom>2</AgeFrom>
+    <AgeTo>5</AgeTo>
+  </Toy>
+  <Toy>
+    <Name>Кукла</Name>
+    <Price>150</Price>
+    <AgeFrom>5</AgeFrom>
+    <AgeTo>7</AgeTo>
+  </Toy>
+  <Toy>
+    <Name>Пазл</Name>
+    <Price>80</Price>
+    <AgeFrom>4</AgeFrom>
+    <AgeTo>5</AgeTo>
+  </Toy>
+  <Toy>
+    <Name>Конструктор Лего</Name>
+    <Price>600</Price>
+    <AgeFrom>6</AgeFrom>
+    <AgeTo>12</AgeTo>
+  </Toy>
+  <Toy>
+    <Name>Игрушечный робот</Name>
+    <Price>750</Price>
+    <AgeFrom>5</AgeFrom>
+    <AgeTo>10</AgeTo>
+  </Toy>
+  <Toy>
+    <Name>Набор для рисования</Name>
+    <Price>200</Price>
+    <AgeFrom>4</AgeFrom>
+    <AgeTo>8</AgeTo>
+  </Toy>
+  <Toy>
+    <Name>Мягкий заяц</Name>
+    <Price>120</Price>
+    <AgeFrom>1</AgeFrom>
+    <AgeTo>3</AgeTo>
+  </Toy>
+  <Toy>
+    <Name>Игровой домик</Name>
+    <Price>500</Price>
+    <AgeFrom>3</AgeFrom>
+    <AgeTo>6</AgeTo>
+  </Toy>
+  <Toy>
+    <Name>Детский микрофон</Name>
+    <Price>250</Price>
+    <AgeFrom>4</AgeFrom>
+    <AgeTo>8</AgeTo>
+  </Toy>
+  <Toy>
+    <Name>Набор кубиков</Name>
+    <Price>90</Price>
+    <AgeFrom>1</AgeFrom>
+    <AgeTo>4</AgeTo>
+  </Toy>
+  <Toy>
+    <Name>Игровая кухня</Name>
+    <Price>1000</Price>
+    <AgeFrom>5</AgeFrom>
+    <AgeTo>10</AgeTo>
+  </Toy>
+  <Toy>
+    <Name>Железная дорога</Name>
+    <Price>850</Price>
+    <AgeFrom>3</AgeFrom>
+    <AgeTo>7</AgeTo>
+  </Toy>
+  <Toy>
+    <Name>Магнитный алфавит</Name>
+    <Price>150</Price>
+    <AgeFrom>3</AgeFrom>
+    <AgeTo>6</AgeTo>
+  </Toy>
+  <Toy>
+    <Name>Игрушечный телефон</Name>
+    <Price>50</Price>
+    <AgeFrom>1</AgeFrom>
+    <AgeTo>3</AgeTo>
+  </Toy>
+  <Toy>
+    <Name>Настольная игра "Лото"</Name>
+    <Price>200</Price>
+    <AgeFrom>5</AgeFrom>
+    <AgeTo>12</AgeTo>
+  </Toy>
+  <Toy>
+    <Name>Мягкая игрушка Лев</Name>
+    <Price>400</Price>
+    <AgeFrom>2</AgeFrom>
+    <AgeTo>6</AgeTo>
+  </Toy>
+  <Toy>
+    <Name>Электрическая железная дорога</Name>
+    <Price>950</Price>
+    <AgeFrom>6</AgeFrom>
+    <AgeTo>12</AgeTo>
+  </Toy>
+  <Toy>
+    <Name>Прыгающий мяч</Name>
+    <Price>70</Price>
+    <AgeFrom>3</AgeFrom>
+    <AgeTo>7</AgeTo>
+  </Toy>
+  <Toy>
+    <Name>Головоломка</Name>
+    <Price>120</Price>
+    <AgeFrom>7</AgeFrom>
+    <AgeTo>12</AgeTo>
+  </Toy>
+</ArrayOfToy>

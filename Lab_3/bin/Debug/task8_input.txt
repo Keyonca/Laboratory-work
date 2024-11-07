@@ -1,0 +1,12 @@
+This is a line without digits.
+Another line with no digits.
+This line has 3 numbers.
+Hello world
+Привет, как дела?
+На улице 0 градусов
+Телефон: 123-456-7890
+Цена: 99 рублей
+Сегодня пятница
+ID12345
+Просто текст без чисел
+2024 год - новый вызов!
