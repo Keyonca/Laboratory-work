@@ -221,10 +221,10 @@ public static class FileTasks
         int divisor;
         while (true)
         {
-            Console.Write("Введите число k для поиска кратных ему чисел в файле: ");
+            Console.Write("Введите число k для поиска суммы кратных ему чисел в файле: ");
             string input = Console.ReadLine();
 
-            if (int.TryParse(input, out divisor) && divisor != 0)
+            if (int.TryParse(input, out divisor) && divisor > 0)
             {
                 break; // Корректное значение введено
             }
