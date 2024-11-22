@@ -208,73 +208,62 @@ public class Operations
                     Console.WriteLine("Ошибка: Файл не найден!");
                     return;
                 }
-
+            
                 // Считываем текст из файла
                 string text = File.ReadAllText(filePath);
-
+            
                 if (string.IsNullOrWhiteSpace(text))
                 {
                     Console.WriteLine("Ошибка: Файл пуст!");
                     return;
                 }
-
+            
                 // Разделяем текст на слова
                 string[] words = SplitIntoWords(text);
-
+            
                 if (words.Length == 0)
                 {
                     Console.WriteLine("Ошибка: Текст не содержит слов!");
                     return;
                 }
-
-                // Храним количество вхождений каждой звонкой согласной
-                Dictionary<char, HashSet<string>> letterOccurrences = new Dictionary<char, HashSet<string>>();
-
+            
+                // Храним множества звонких согласных, которые встречаются более чем в одном слове
+                HashSet<char> occurringMoreThanOnce = new HashSet<char>();
+                HashSet<char> checkedLetters = new HashSet<char>();
+            
                 foreach (string word in words)
                 {
                     // Сохраняем уникальные буквы из текущего слова
                     HashSet<char> uniqueLettersInWord = new HashSet<char>(word);
-
+            
                     foreach (char letter in uniqueLettersInWord)
                     {
                         if (VoicedConsonants.Contains(letter))
                         {
-                            // Добавляем букву в словарь
-                            if (!letterOccurrences.ContainsKey(letter))
+                            // Если буква уже проверялась ранее, добавляем её в множество для вывода
+                            if (!checkedLetters.Add(letter))
                             {
-                                letterOccurrences[letter] = new HashSet<string>();
+                                occurringMoreThanOnce.Add(letter);
                             }
-                            letterOccurrences[letter].Add(word);
                         }
                     }
                 }
-
-                // Формируем список звонких согласных, которые встречаются более чем в одном слове
-                List<char> result = new List<char>();
-
-                foreach (var pair in letterOccurrences)
-                {
-                    if (pair.Value.Count > 1) // Если буква встречается более чем в одном слове
-                    {
-                        result.Add(pair.Key);
-                    }
-                }
-
+            
                 // Сортируем результат
-                result.Sort();
-
+                List<char> sortedResult = new List<char>(occurringMoreThanOnce);
+                sortedResult.Sort();
+            
                 // Печатаем результат
-                if (result.Count > 0)
-                    {
-                        Console.WriteLine("Звонкие согласные, которые входят более чем в одно слово:");
-                        Console.WriteLine(string.Join(" ", result));
-                    }
-                    else
-                    {
-                        Console.WriteLine("Нет звонких согласных, которые входят более чем в одно слово.");
-                    }
+                if (sortedResult.Count > 0)
+                {
+                    Console.WriteLine("Звонкие согласные, которые входят более чем в одно слово:");
+                    Console.WriteLine(string.Join(" ", sortedResult));
                 }
-
+                else
+                {
+                    Console.WriteLine("Нет звонких согласных, которые входят более чем в одно слово.");
+                }
+            }
             catch (Exception ex)
             {
                 // Обрабатываем любые ошибки
