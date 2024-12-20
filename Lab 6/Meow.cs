@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 
 public class Meow
 {
@@ -51,13 +50,31 @@ public class Meow
     // метод для получения звуков мяуканья
     private static string GetMeowSound1(int count)
     {
-        return string.Join("-", Enumerable.Repeat("мяу", count)) + "!";
+        string result = "";
+        for (int i = 0; i < count; i++)
+        {
+            result += "мяу";
+            if (i < count - 1) // добавляем "-" только если это не последний элемент
+            {
+                result += "-";
+            }
+        }
+        return result + "!";
     }
-
+    
     // метод для получения звуков гавканья
     private static string GetBarkSound1(int count)
     {
-        return string.Join("-", Enumerable.Repeat("гав", count)) + "!";
+        string result = "";
+        for (int i = 0; i < count; i++)
+        {
+            result += "гав";
+            if (i < count - 1) // добавляем "-" только если это не последний элемент
+            {
+                result += "-";
+            }
+        }
+        return result + "!";
     }
 
     // Метод для подсчета мяуканий
